@@ -23,12 +23,12 @@ app.use(express.static("public"));
 
 // This view route is a GET route for the notes page
 app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, "/public/notes.html"));
+    res.sendFile(path.join(__dirname, "/public/assets/notes.html"));
 });
 
 // This view route is a GET route for the homepage
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, "/public/index.html"));
+    res.sendFile(path.join(__dirname, "/public/assets/index.html"));
 });
 
 // This API route is a GET Route for retrieving all of the notes
